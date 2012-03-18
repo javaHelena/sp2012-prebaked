@@ -1,0 +1,23 @@
+@(comments: List[Comment], commentForm: Form[Comment])
+
+@import helper._
+
+@main("Playframework 2.0 @ Software Passion 2012") {
+
+    <article>
+        <h1>Software Passion 2012</h1>
+
+        @form(routes.Application.add()) {
+            @inputText(commentForm("text"))
+            @inputText(commentForm("name"))
+            <input type="submit" value="Send" />
+        }
+
+        <ul>
+        @for(comment <- comments) {
+            <li>@comment.text - says - @comment.name</li>
+        }
+        </ul>
+
+    </article>
+}
