@@ -1,0 +1,104 @@
+body {
+    background-color: #EF742E;
+    background-image: url('../images/pattern.thicklines.png');
+    font-family: Helvetica, Arial, sans-serif;
+    color: #3F4950;
+}
+
+h1 {
+    margin-top: 0;
+    color: #3F4950;
+    text-shadow: 0px 2px 3px #ccc;
+}
+
+article {
+    background-color: white;
+    width: 60%;
+    padding: 2em;
+    margin-left: 20%;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -moz-box-shadow: 10px 10px 5px rgb(216, 100, 33);
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 5px 5px 5px rgb(216, 100, 33);;
+}
+
+article ul {
+    list-style: none;
+    margin: 1em;
+    padding: 0;
+}
+
+article li {
+    position:relative;
+    margin-left: 5px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+
+    background-image: linear-gradient(left bottom, #C3D1D9 0%, #EAECED 74%);
+    background-image: -o-linear-gradient(left bottom, #C3D1D9 0%, #EAECED 74%);
+    background-image: -moz-linear-gradient(left bottom, #C3D1D9 0%, #EAECED 74%);
+    background-image: -webkit-linear-gradient(left bottom, #C3D1D9 0%, #EAECED 74%);
+    background-image: -ms-linear-gradient(left bottom, #C3D1D9 0%, #EAECED 74%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        right top,
+        color-stop(0, #C3D1D9),
+        color-stop(0.74, #EAECED)
+    );
+}
+
+article li:after {
+    content:"";
+    display:block; /* reduce the damage in FF3.0 */
+    position:absolute;
+    top: 10px;
+    left: -10px;
+    width:0;
+    border-width: 5px 10px 5px 0;
+    border-style:solid;
+    border-color:transparent #C3D1D9;
+}
+
+article img {
+    width: 440px;
+    margin: 0 0 1em 0;
+    border: 1px solid #DF641E;
+}
+
+
+article dl {
+    list-style: none;
+    display: block;
+    margin: 0;
+    clear: both;
+}
+
+article dl dt {
+    font-weight: bold;
+    float: left;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+
+}
+
+article dl dd {
+    display: inline;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+article dl dd.info {
+    display: none;
+}
+
+article dl dd.error {
+    color: red;
+    margin: 0;
+}
